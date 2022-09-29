@@ -12,10 +12,7 @@ public class Display {
 	private String valueDisplay = "0";
 
 	public Display() {
-		display = new Label(valueDisplay);
-		display.setMinSize(width, heigh);
-		display.setAlignment(Pos.CENTER_RIGHT);
-		display.getStyleClass().add("display");
+		initializeDisplay();
 	}
 
 	public Label getDisplay() {
@@ -29,5 +26,12 @@ public class Display {
 	public void setValueDisplay(String valueDisplay) {
 		this.valueDisplay = valueDisplay;
 		this.display.setText(valueDisplay);
+	}
+	
+	private void initializeDisplay() {
+		display = new Label(valueDisplay);
+		display.setMinSize(width, heigh);
+		display.setAlignment(Pos.CENTER_RIGHT);
+		display.getStyleClass().add("display");
 	}
 }
