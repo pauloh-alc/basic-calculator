@@ -10,19 +10,11 @@ public class CustomButton {
 	private String label;
 
 	public CustomButton(String label) {
-		this.button = new Button(label);
-		this.button.setMinSize(MinWidth, MinHeight);
-		this.button.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
-		this.button.getStyleClass().add("custom-button");
-		this.label = label;
+		initializeCustomButtom(label, "custom-button");
 	}
 
 	public CustomButton(String label, String classSelector) {
-		this.button = new Button(label);
-		this.button.setMinSize(MinWidth, MinHeight);
-		this.button.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
-		this.button.getStyleClass().add(classSelector);
-		this.label = label;
+		initializeCustomButtom(label, classSelector);
 	}
 
 	public Button getButton() {
@@ -31,5 +23,13 @@ public class CustomButton {
 
 	public String getLabel() {
 		return label;
+	}
+	
+	private void initializeCustomButtom(String label, String classSelector) {
+		this.button = new Button(label);
+		this.button.setMinSize(MinWidth, MinHeight);
+		this.button.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE);
+		this.button.getStyleClass().add(classSelector);
+		this.label = label;
 	}
 }

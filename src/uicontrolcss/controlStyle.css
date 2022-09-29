@@ -9,23 +9,23 @@
 }
 
 .custom-button {
-    -fx-font: 16px "Serif";
-    -fx-background-color: #212121;
-    -fx-color: #000000;
+	-fx-font: 16px "Serif";
+	-fx-background-color: #212121;
+	-fx-color: #000000;
 	-fx-font-weight: bolder;
 	-fx-overflow: hidden;
-    -fx-transition: 1s all ease;
+	-fx-transition: 1s all ease;
 }
 
 .custom-button:hover {
-    -fx-background-color: #3584e4;
+	-fx-background-color: #3584e4;
 }
 
 .operator {
-	 -fx-background-color: #12d7d3;
-	 -fx-font-weight: bolder;
+	-fx-background-color: #12d7d3;
+	-fx-font-weight: bolder;
 }
 
 .operator:hover {
-	 -fx-background-color: #ffffff;
+	-fx-background-color: #ffffff;
 }
